@@ -1,12 +1,34 @@
 {
-  "mcpServers": {
-    "qmoosa-reality-gate": {
-      "command": "node",
-      "args": ["dist/index.js", "--mcp"],
-      "env": {
-        "QUICKNODE_RPC": "https://api.quicknode.com/demo",
-        "PQC_STANDARD": "NIST-FIPS-204"
+  "name": "mother-teresa-ai-mcp",
+  "version": "1.0.0",
+  "description": "Mother Teresa AI Model Context Protocol Server for Radical Compassion & Zero-Leakage Destitute Care Micro-Escrows",
+  "tools": [
+    {
+      "name": "verify_proof_of_mercy",
+      "description": "Validate cryptographic proof of care delivery for lepers, orphans, hospices, and destitute individuals",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sanctuary_id": { "type": "string" },
+          "care_type": { "type": "string" },
+          "beneficiary_count": { "type": "integer" },
+          "care_attestation_hash": { "type": "string" }
+        },
+        "required": ["sanctuary_id", "care_type", "beneficiary_count", "care_attestation_hash"]
+      }
+    },
+    {
+      "name": "disburse_direct_aid",
+      "description": "Trigger an immediate zero-leakage micro-escrow disbursement directly to grassroots caretakers",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sanctuary_type": { "type": "string" },
+          "caretaker_address": { "type": "string" },
+          "amount_wei": { "type": "string" }
+        },
+        "required": ["sanctuary_type", "caretaker_address", "amount_wei"]
       }
     }
-  }
+  ]
 }
